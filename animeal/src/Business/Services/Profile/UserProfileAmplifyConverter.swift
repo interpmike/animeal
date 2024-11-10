@@ -195,7 +195,8 @@ struct UserProfileAmplifyConverter: UserProfileAmplifyConverting, AmplifyUserPro
                 guard let key = convertAuthUserAttributeKey(key) else { return nil }
                 return (key, convertUpdateAttributeResult(value))
             }
-        return Dictionary(uniqueKeysWithValues: converted)
+        let condensed = Dictionary(uniqueKeysWithValues: converted)
+        return condensed
     }
 
     func convertCodeDeliveryDetails(_ codeDeliveryDetails: AuthCodeDeliveryDetails) -> UserProfileCodeDeliveryDetails {
