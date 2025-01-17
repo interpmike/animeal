@@ -12,7 +12,7 @@ final class FAQViewModel: FAQViewModelLifeCycle, FAQViewInteraction, FAQViewStat
 
     @Published var faqItems: [FAQViewItem] = []
     let footerText: LocalizedStringKey = {
-        let email = "example@gmail.com"
+        let email = "hi@animalproject.ge"
         let link = "[\(email)](mailto:\(email))"
         return LocalizedStringKey(L10n.Faq.Footer.text(link))
     }()
