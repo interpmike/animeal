@@ -23,7 +23,7 @@ jobs:
       - name: Install and run 'bundle install'
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.4
+          ruby-version: 2.6
           # runs 'bundle install' and caches installed gems automatically
           bundler-cache: true
       - name: Install npm
